@@ -391,7 +391,7 @@ public class GUI extends JFrame{ //classe che si occupa della gestione della GUI
             //aggiungo ai bottoni il loro action listener
             
 
-            //disabilito la finestra principale e rendo la finestra di dialogo visibile
+            //rendo la finestra di dialogo visibile
             win.setEnabled(false);
             gameOver.setAlwaysOnTop(true);
             gameOver.setSize(300, 100);
@@ -409,12 +409,11 @@ public class GUI extends JFrame{ //classe che si occupa della gestione della GUI
             @Override
             public void windowClosing(WindowEvent e) { //alla chiusura della finestra forzo l'arresto del programma
                 System.exit(0);
-
             }
         
             @Override
             public void windowClosed(WindowEvent e) {
-                //metodo vuoto in quanto non necessario ma obbligatorio
+                System.exit(0);
             }
         
             @Override
